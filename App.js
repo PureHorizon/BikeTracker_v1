@@ -2,6 +2,7 @@ import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Feather from "react-native-vector-icons/Feather";
+
 import HomeScreen from "./src/screens/Home";
 import SettingsScreen from "./src/screens/Settings";
 import MapsScreen from "./src/screens/Maps";
@@ -24,12 +25,11 @@ function App() {
             }
             return <Feather name={iconName} size={size} color={color} />;
           },
+          tabBarActiveTintColor: "tomato",
+          tabBarInactiveTintColor: "gray",
+          tabBarShowLabel: false,
+          tabBarStyle: [{ display: "flex" }, null],
         })}
-        tabBarOptions={{
-          activeTintColor: "tomato",
-          inactiveTintColor: "gray",
-          showLabel: false,
-        }}
       >
         <Tab.Screen name="Home" component={HomeScreen} />
         <Tab.Screen name="Maps" component={MapsScreen} />
