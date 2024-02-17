@@ -138,7 +138,7 @@ const HomeScreen = () => {
       </View>
 
       <Image
-        source={{ uri: "./assets/images/bike.jpg" }}
+        source={{ uri: "./src/assets/images/bike.jpg" }}
         style={styles.bikeImage}
       />
 
