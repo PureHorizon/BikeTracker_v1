@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
   iconFocused: {
     backgroundColor: "rgba(255, 255, 255, 0.2)",
     borderRadius: 25,
-    padding: 10,
+    padding: 9,
   },
 });
 
