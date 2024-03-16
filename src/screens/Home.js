@@ -17,7 +17,7 @@ const HomeScreen = () => {
   const navigation = useNavigation();
 
   const handleUnlockSuccess = (isLocked) => {
-    console.log(isLocked ? "Locked!" : "Unlocked!");
+    console.log(isLocked ? "Unlocked!" : "Locked!");
   };
 
   const handleMapsPress = () => {
@@ -37,6 +37,10 @@ const HomeScreen = () => {
           style={[styles.tile, styles.tileLarge]}
           onPress={handleMapsPress}
         >
+          <Image
+            source={require("../assets/images/Map-card.png")} // Pfad zu Ihrem Maps-Bild
+            style={{ width: 200, height: 130 }} // Stellen Sie die Größe des Bildes ein
+          />
           <Text style={styles.tileText}>Maps</Text>
           {/* Icons und Text für die Kachel */}
         </TouchableOpacity>

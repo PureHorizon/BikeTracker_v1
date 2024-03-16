@@ -5,7 +5,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 const MapScreen = () => {
   const iframeUrl =
-    "https://api.maptiler.com/maps/streets-v2/?key=djtXgXwd54GCjmeMweoU#13.8/53.55626/10.01744";
+    "https://api.maptiler.com/maps/streets-v2/?key=djtXgXwd54GCjmeMweoU#13.8/53.542297/9.995842";
 
   return (
     <SafeAreaView style={styles.webview}>

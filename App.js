@@ -8,6 +8,7 @@ import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import HomeScreen from "./src/screens/Home";
 import SettingsScreen from "./src/screens/Settings";
 import MapsScreen from "./src/screens/Maps";
+import FahrdatenScreen from "./src/screens/Fahrdaten";
 import { ThemeProvider } from "./ThemeContext";
 
 const Tab = createBottomTabNavigator();
@@ -39,6 +40,8 @@ function MyTabs() {
             iconName = "settings";
           } else if (route.name === "Maps") {
             iconName = "map";
+          } else if (route.name === "Fahrdaten") {
+            iconName = "directions-bike";
           }
           return (
             <View style={focused ? styles.iconFocused : {}}>
@@ -63,6 +66,7 @@ function MyTabs() {
       })}
     >
       <Tab.Screen name="Home" component={HomeScreen} />
+      <Tab.Screen name="Fahrdaten" component={FahrdatenScreen} />
       <Tab.Screen name="Maps" component={MapsScreen} />
       <Tab.Screen name="Settings" component={SettingsScreen} />
     </Tab.Navigator>
